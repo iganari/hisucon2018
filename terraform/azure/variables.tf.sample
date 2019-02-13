@@ -78,7 +78,7 @@ variable "os_hostname" {
     default = "${YOUR-HOSTNAME}"
 }
 variable "os_username" {
-    default = "${YOUR-NAME}"
+    default = "${YOUR-USERNAME}"
     # default = "azureuser"
 }
 variable "os_userpublickey" {
