@@ -2,26 +2,29 @@
 
 ## :warning: WIP
 
-+ System Requirements
-    + Azure CLI
+## System Requirements
 
-    ```
-    $ which az                                                                            
-    /usr/bin/az
++ Azure CLI
 
-    $ az --version                                                                        
-    azure-cli 2.0.58 
-    ```
+```
+$ which az                                                                            
+/usr/bin/az
 
-    + Terraform
+$ az --version                                                                        
+azure-cli 2.0.58 
+```
 
-    ```
-    $ which terraform
-    /usr/local/bin/terraform
++ Terraform
 
-    $ terraform --version                                                                
-    Terraform v0.11.11
-    ```
+```
+$ which terraform
+/usr/local/bin/terraform
+
+$ terraform --version                                                                
+Terraform v0.11.11
+```
+
+## Prepare variable file
 
 + Copy var file of Terraform from Sample var file.
 
