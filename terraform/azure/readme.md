@@ -10,7 +10,7 @@
     /usr/bin/az
 
     $ az --version                                                                        
-    azure-cli
+    azure-cli 2.0.58 
     ```
 
     + Terraform
