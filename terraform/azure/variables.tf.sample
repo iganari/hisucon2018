@@ -1,0 +1,86 @@
+### Common Setting
+variable "maintainer" {
+    default = "${YOUR-NAME}"
+}
+variable "description" {
+    default = "management Virtual Machines by Terraform"
+}
+
+
+### Resource Group Setting ###
+variable "resource_groups_name" {
+    default = "${YOUR-RESOURCE-GROUP-NAME}"
+}
+variable "resource_groups_location" {
+    # default = "Central US"
+    default = "japaneast"
+}
+
+
+### virtualmachines Setting ###
+variable "vm_location" {
+    default = "japaneast"
+}
+variable "vnet_name" {
+    default = "${YOUR-VNET-NAME}"
+}
+variable "subnet_name" {
+    default = "${YOUR-SUBNET-NAME}"
+}
+
+### Public IP Addresses Setting ###
+variable "publicip_name" {
+    default = "${YOUR-PUBLIC-IP-NAME}"
+}
+variable "dnslabel_name" {
+    default = "${YOUR-DNSLABEL-NAME}"
+}
+
+
+variable "nsgroup_name" {
+    default = "${YOUR-NETWORK-SECURITY-NAME}"
+}
+variable "nwintf_name" {
+    default = "${YOUR-NETWORK-INTERFACE-NAME}"
+}
+variable "disk_name" {
+    default = "${DISK-NAME}"
+}
+
+
+### OS images setting ###
+variable "image_reference_publisher" {
+    default = "Canonical"
+}
+variable "image_reference_offer" {
+    default = "UbuntuServer"
+}
+variable "image_reference_sku" {
+    default = "18.04-LTS"
+}
+variable "image_reference_version" {
+    default = "18.04.201811010"
+}
+
+
+### VM Resource  setting ###
+variable "vm_name" {
+    default = "${YOUR-VIRTUAL-MACHINE-NAME}"
+}
+variable "vm_size" {
+    default = "Standard_B2s"
+    # default = "Standard_DS1_v2"
+}
+
+
+### OS setting ###
+variable "os_hostname" {
+    default = "${YOUR-HOSTNAME}"
+}
+variable "os_username" {
+    default = "${YOUR-NAME}"
+    # default = "azureuser"
+}
+variable "os_userpublickey" {
+    default = "ssh-rsa AAAAB3N..."
+}
