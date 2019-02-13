@@ -5,7 +5,6 @@ resource "azurerm_resource_group" "vm_arg" {
     tags {
         maintainer  = "${var.maintainer}"
         description = "${var.description}"
-        source-url  = "${var.src-url}"
     }
 }
 
@@ -20,7 +19,6 @@ resource "azurerm_virtual_network" "vm_avn" {
     tags {
         maintainer  = "${var.maintainer}"
         description = "${var.description}"
-        source-url  = "${var.src-url}"
     }
 }
 
@@ -51,7 +49,6 @@ resource "azurerm_public_ip" "vm_api" {
     tags {
         maintainer  = "${var.maintainer}"
         description = "${var.description}"
-        source-url  = "${var.src-url}"
     }
 }
 
@@ -101,7 +98,6 @@ resource "azurerm_network_security_group" "vm_ansg" {
     tags {
         maintainer  = "${var.maintainer}"
         description = "${var.description}"
-        source-url  = "${var.src-url}"
     }
 }
 
@@ -123,7 +119,6 @@ resource "azurerm_network_interface" "vm_ani" {
     tags {
         maintainer  = "${var.maintainer}"
         description = "${var.description}"
-        source-url  = "${var.src-url}"
     }
 }
 
@@ -148,7 +143,6 @@ resource "azurerm_storage_account" "vm_asa" {
     tags {
         maintainer  = "${var.maintainer}"
         description = "${var.description}"
-        source-url  = "${var.src-url}"
     }
 }
 
@@ -200,6 +194,5 @@ resource "azurerm_virtual_machine" "vm_avm" {
     tags {
         maintainer  = "${var.maintainer}"
         description = "${var.description}"
-        source-url  = "${var.src-url}"
     }
 }
